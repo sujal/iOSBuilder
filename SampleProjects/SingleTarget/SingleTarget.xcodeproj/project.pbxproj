@@ -222,11 +222,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SingleTarget_Prefix.pch;
 				INFOPLIST_FILE = "SingleTarget-Info.plist";
 				PRODUCT_NAME = SingleTarget;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Ad Hoc";
@@ -249,11 +251,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ESPN Inc.";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SingleTarget_Prefix.pch;
 				INFOPLIST_FILE = "SingleTarget-Info.plist";
 				PRODUCT_NAME = SingleTarget;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "693A70C0-63EB-4343-8C4C-0337EECD5CE3";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
