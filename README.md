@@ -1,5 +1,4 @@
 # iOSBuilder 
-
 _A build system using Rake for iOS Applications._
 
 Top level features include:
@@ -10,4 +9,4 @@ Top level features include:
 - Archive build to XCode's Build/Archive directory
 - optionally copy build to other path (e.g. to network backup)
 
-
+Coming soon.
