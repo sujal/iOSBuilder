@@ -6,3 +6,4 @@ profile
 *.pbxuser
 Releases
 xcuserdata
+pkg
