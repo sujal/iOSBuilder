@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5010E102134527D6007AD016 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E101134527D6007AD016 /* UIKit.framework */; };
+		5010E104134527D6007AD016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E103134527D6007AD016 /* Foundation.framework */; };
+		5010E106134527D6007AD016 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E105134527D6007AD016 /* CoreGraphics.framework */; };
+		5010E10C134527D6007AD016 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5010E10A134527D6007AD016 /* InfoPlist.strings */; };
+		5010E10F134527D6007AD016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E10E134527D6007AD016 /* main.m */; };
+		5010E112134527D6007AD016 /* DoubleTargetXC4AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E111134527D6007AD016 /* DoubleTargetXC4AppDelegate.m */; };
+		5010E116134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E115134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.m */; };
+		5010E119134527D6007AD016 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5010E117134527D6007AD016 /* MainWindow_iPhone.xib */; };
+		5010E11D134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E11C134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPad.m */; };
+		5010E120134527D6007AD016 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5010E11E134527D6007AD016 /* MainWindow_iPad.xib */; };
+		5010E127134527D6007AD016 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E101134527D6007AD016 /* UIKit.framework */; };
+		5010E128134527D6007AD016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E103134527D6007AD016 /* Foundation.framework */; };
+		5010E129134527D6007AD016 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E105134527D6007AD016 /* CoreGraphics.framework */; };
+		5010E131134527D6007AD016 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5010E12F134527D6007AD016 /* InfoPlist.strings */; };
+		5010E134134527D6007AD016 /* DoubleTargetXC4Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5010E133134527D6007AD016 /* DoubleTargetXC4Tests.h */; };
+		5010E136134527D6007AD016 /* DoubleTargetXC4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E135134527D6007AD016 /* DoubleTargetXC4Tests.m */; };
+		5010E141134527E6007AD016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E10E134527D6007AD016 /* main.m */; };
+		5010E142134527E6007AD016 /* DoubleTargetXC4AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E111134527D6007AD016 /* DoubleTargetXC4AppDelegate.m */; };
+		5010E143134527E6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E115134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.m */; };
+		5010E144134527E6007AD016 /* DoubleTargetXC4AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010E11C134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPad.m */; };
+		5010E146134527E6007AD016 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E101134527D6007AD016 /* UIKit.framework */; };
+		5010E147134527E6007AD016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E103134527D6007AD016 /* Foundation.framework */; };
+		5010E148134527E6007AD016 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010E105134527D6007AD016 /* CoreGraphics.framework */; };
+		5010E14A134527E6007AD016 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5010E10A134527D6007AD016 /* InfoPlist.strings */; };
+		5010E14B134527E6007AD016 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5010E117134527D6007AD016 /* MainWindow_iPhone.xib */; };
+		5010E14C134527E6007AD016 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5010E11E134527D6007AD016 /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5010E12A134527D6007AD016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5010E0F4134527D5007AD016 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5010E0FC134527D6007AD016;
+			remoteInfo = DoubleTargetXC4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5010E0FD134527D6007AD016 /* DoubleTargetXC4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleTargetXC4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5010E101134527D6007AD016 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5010E103134527D6007AD016 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5010E105134527D6007AD016 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5010E109134527D6007AD016 /* DoubleTargetXC4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubleTargetXC4-Info.plist"; sourceTree = "<group>"; };
+		5010E10B134527D6007AD016 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5010E10D134527D6007AD016 /* DoubleTargetXC4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoubleTargetXC4-Prefix.pch"; sourceTree = "<group>"; };
+		5010E10E134527D6007AD016 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5010E110134527D6007AD016 /* DoubleTargetXC4AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleTargetXC4AppDelegate.h; sourceTree = "<group>"; };
+		5010E111134527D6007AD016 /* DoubleTargetXC4AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleTargetXC4AppDelegate.m; sourceTree = "<group>"; };
+		5010E114134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoubleTargetXC4AppDelegate_iPhone.h; path = iPhone/DoubleTargetXC4AppDelegate_iPhone.h; sourceTree = "<group>"; };
+		5010E115134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DoubleTargetXC4AppDelegate_iPhone.m; path = iPhone/DoubleTargetXC4AppDelegate_iPhone.m; sourceTree = "<group>"; };
+		5010E118134527D6007AD016 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		5010E11B134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoubleTargetXC4AppDelegate_iPad.h; path = iPad/DoubleTargetXC4AppDelegate_iPad.h; sourceTree = "<group>"; };
+		5010E11C134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DoubleTargetXC4AppDelegate_iPad.m; path = iPad/DoubleTargetXC4AppDelegate_iPad.m; sourceTree = "<group>"; };
+		5010E11F134527D6007AD016 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		5010E126134527D6007AD016 /* DoubleTargetXC4Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubleTargetXC4Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5010E12E134527D6007AD016 /* DoubleTargetXC4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubleTargetXC4Tests-Info.plist"; sourceTree = "<group>"; };
+		5010E130134527D6007AD016 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5010E132134527D6007AD016 /* DoubleTargetXC4Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoubleTargetXC4Tests-Prefix.pch"; sourceTree = "<group>"; };
+		5010E133134527D6007AD016 /* DoubleTargetXC4Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleTargetXC4Tests.h; sourceTree = "<group>"; };
+		5010E135134527D6007AD016 /* DoubleTargetXC4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleTargetXC4Tests.m; sourceTree = "<group>"; };
+		5010E150134527E6007AD016 /* DoubleTargetXC4QA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleTargetXC4QA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5010E15213452908007AD016 /* DoubleTargetXC4QA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubleTargetXC4QA-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5010E0FA134527D6007AD016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E102134527D6007AD016 /* UIKit.framework in Frameworks */,
+				5010E104134527D6007AD016 /* Foundation.framework in Frameworks */,
+				5010E106134527D6007AD016 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5010E122134527D6007AD016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E127134527D6007AD016 /* UIKit.framework in Frameworks */,
+				5010E128134527D6007AD016 /* Foundation.framework in Frameworks */,
+				5010E129134527D6007AD016 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5010E145134527E6007AD016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E146134527E6007AD016 /* UIKit.framework in Frameworks */,
+				5010E147134527E6007AD016 /* Foundation.framework in Frameworks */,
+				5010E148134527E6007AD016 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5010E0F2134527D5007AD016 = {
+			isa = PBXGroup;
+			children = (
+				5010E107134527D6007AD016 /* DoubleTargetXC4 */,
+				5010E12C134527D6007AD016 /* DoubleTargetXC4Tests */,
+				5010E100134527D6007AD016 /* Frameworks */,
+				5010E0FE134527D6007AD016 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5010E0FE134527D6007AD016 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5010E0FD134527D6007AD016 /* DoubleTargetXC4.app */,
+				5010E126134527D6007AD016 /* DoubleTargetXC4Tests.octest */,
+				5010E150134527E6007AD016 /* DoubleTargetXC4QA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5010E100134527D6007AD016 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5010E101134527D6007AD016 /* UIKit.framework */,
+				5010E103134527D6007AD016 /* Foundation.framework */,
+				5010E105134527D6007AD016 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5010E107134527D6007AD016 /* DoubleTargetXC4 */ = {
+			isa = PBXGroup;
+			children = (
+				5010E110134527D6007AD016 /* DoubleTargetXC4AppDelegate.h */,
+				5010E111134527D6007AD016 /* DoubleTargetXC4AppDelegate.m */,
+				5010E113134527D6007AD016 /* iPhone */,
+				5010E11A134527D6007AD016 /* iPad */,
+				5010E108134527D6007AD016 /* Supporting Files */,
+			);
+			path = DoubleTargetXC4;
+			sourceTree = "<group>";
+		};
+		5010E108134527D6007AD016 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5010E15213452908007AD016 /* DoubleTargetXC4QA-Info.plist */,
+				5010E109134527D6007AD016 /* DoubleTargetXC4-Info.plist */,
+				5010E10A134527D6007AD016 /* InfoPlist.strings */,
+				5010E10D134527D6007AD016 /* DoubleTargetXC4-Prefix.pch */,
+				5010E10E134527D6007AD016 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5010E113134527D6007AD016 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				5010E114134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.h */,
+				5010E115134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.m */,
+				5010E117134527D6007AD016 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		5010E11A134527D6007AD016 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				5010E11B134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPad.h */,
+				5010E11C134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPad.m */,
+				5010E11E134527D6007AD016 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		5010E12C134527D6007AD016 /* DoubleTargetXC4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5010E133134527D6007AD016 /* DoubleTargetXC4Tests.h */,
+				5010E135134527D6007AD016 /* DoubleTargetXC4Tests.m */,
+				5010E12D134527D6007AD016 /* Supporting Files */,
+			);
+			path = DoubleTargetXC4Tests;
+			sourceTree = "<group>";
+		};
+		5010E12D134527D6007AD016 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5010E12E134527D6007AD016 /* DoubleTargetXC4Tests-Info.plist */,
+				5010E12F134527D6007AD016 /* InfoPlist.strings */,
+				5010E132134527D6007AD016 /* DoubleTargetXC4Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5010E0FC134527D6007AD016 /* DoubleTargetXC4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5010E139134527D6007AD016 /* Build configuration list for PBXNativeTarget "DoubleTargetXC4" */;
+			buildPhases = (
+				5010E0F9134527D6007AD016 /* Sources */,
+				5010E0FA134527D6007AD016 /* Frameworks */,
+				5010E0FB134527D6007AD016 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoubleTargetXC4;
+			productName = DoubleTargetXC4;
+			productReference = 5010E0FD134527D6007AD016 /* DoubleTargetXC4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5010E125134527D6007AD016 /* DoubleTargetXC4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5010E13C134527D6007AD016 /* Build configuration list for PBXNativeTarget "DoubleTargetXC4Tests" */;
+			buildPhases = (
+				5010E121134527D6007AD016 /* Sources */,
+				5010E122134527D6007AD016 /* Frameworks */,
+				5010E123134527D6007AD016 /* Resources */,
+				5010E124134527D6007AD016 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5010E12B134527D6007AD016 /* PBXTargetDependency */,
+			);
+			name = DoubleTargetXC4Tests;
+			productName = DoubleTargetXC4Tests;
+			productReference = 5010E126134527D6007AD016 /* DoubleTargetXC4Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5010E13F134527E6007AD016 /* DoubleTargetXC4QA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5010E14D134527E6007AD016 /* Build configuration list for PBXNativeTarget "DoubleTargetXC4QA" */;
+			buildPhases = (
+				5010E140134527E6007AD016 /* Sources */,
+				5010E145134527E6007AD016 /* Frameworks */,
+				5010E149134527E6007AD016 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoubleTargetXC4QA;
+			productName = DoubleTargetXC4;
+			productReference = 5010E150134527E6007AD016 /* DoubleTargetXC4QA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5010E0F4134527D5007AD016 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = ESPN;
+			};
+			buildConfigurationList = 5010E0F7134527D5007AD016 /* Build configuration list for PBXProject "DoubleTargetXC4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5010E0F2134527D5007AD016;
+			productRefGroup = 5010E0FE134527D6007AD016 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5010E0FC134527D6007AD016 /* DoubleTargetXC4 */,
+				5010E125134527D6007AD016 /* DoubleTargetXC4Tests */,
+				5010E13F134527E6007AD016 /* DoubleTargetXC4QA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5010E0FB134527D6007AD016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E10C134527D6007AD016 /* InfoPlist.strings in Resources */,
+				5010E119134527D6007AD016 /* MainWindow_iPhone.xib in Resources */,
+				5010E120134527D6007AD016 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5010E123134527D6007AD016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E131134527D6007AD016 /* InfoPlist.strings in Resources */,
+				5010E134134527D6007AD016 /* DoubleTargetXC4Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5010E149134527E6007AD016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E14A134527E6007AD016 /* InfoPlist.strings in Resources */,
+				5010E14B134527E6007AD016 /* MainWindow_iPhone.xib in Resources */,
+				5010E14C134527E6007AD016 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5010E124134527D6007AD016 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5010E0F9134527D6007AD016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E10F134527D6007AD016 /* main.m in Sources */,
+				5010E112134527D6007AD016 /* DoubleTargetXC4AppDelegate.m in Sources */,
+				5010E116134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.m in Sources */,
+				5010E11D134527D6007AD016 /* DoubleTargetXC4AppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5010E121134527D6007AD016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E136134527D6007AD016 /* DoubleTargetXC4Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5010E140134527E6007AD016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5010E141134527E6007AD016 /* main.m in Sources */,
+				5010E142134527E6007AD016 /* DoubleTargetXC4AppDelegate.m in Sources */,
+				5010E143134527E6007AD016 /* DoubleTargetXC4AppDelegate_iPhone.m in Sources */,
+				5010E144134527E6007AD016 /* DoubleTargetXC4AppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5010E12B134527D6007AD016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5010E0FC134527D6007AD016 /* DoubleTargetXC4 */;
+			targetProxy = 5010E12A134527D6007AD016 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5010E10A134527D6007AD016 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5010E10B134527D6007AD016 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5010E117134527D6007AD016 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5010E118134527D6007AD016 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		5010E11E134527D6007AD016 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5010E11F134527D6007AD016 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		5010E12F134527D6007AD016 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5010E130134527D6007AD016 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5010E137134527D6007AD016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5010E138134527D6007AD016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5010E13A134527D6007AD016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubleTargetXC4/DoubleTargetXC4-Prefix.pch";
+				INFOPLIST_FILE = "DoubleTargetXC4/DoubleTargetXC4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5010E13B134527D6007AD016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubleTargetXC4/DoubleTargetXC4-Prefix.pch";
+				INFOPLIST_FILE = "DoubleTargetXC4/DoubleTargetXC4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5010E13D134527D6007AD016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DoubleTargetXC4.app/DoubleTargetXC4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubleTargetXC4Tests/DoubleTargetXC4Tests-Prefix.pch";
+				INFOPLIST_FILE = "DoubleTargetXC4Tests/DoubleTargetXC4Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5010E13E134527D6007AD016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DoubleTargetXC4.app/DoubleTargetXC4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubleTargetXC4Tests/DoubleTargetXC4Tests-Prefix.pch";
+				INFOPLIST_FILE = "DoubleTargetXC4Tests/DoubleTargetXC4Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		5010E14E134527E6007AD016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubleTargetXC4/DoubleTargetXC4-Prefix.pch";
+				INFOPLIST_FILE = "DoubleTargetXC4/DoubleTargetXC4QA-Info.plist";
+				PRODUCT_NAME = DoubleTargetXC4QA;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5010E14F134527E6007AD016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoubleTargetXC4/DoubleTargetXC4-Prefix.pch";
+				INFOPLIST_FILE = "DoubleTargetXC4/DoubleTargetXC4QA-Info.plist";
+				PRODUCT_NAME = DoubleTargetXC4QA;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5010E0F7134527D5007AD016 /* Build configuration list for PBXProject "DoubleTargetXC4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5010E137134527D6007AD016 /* Debug */,
+				5010E138134527D6007AD016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5010E139134527D6007AD016 /* Build configuration list for PBXNativeTarget "DoubleTargetXC4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5010E13A134527D6007AD016 /* Debug */,
+				5010E13B134527D6007AD016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5010E13C134527D6007AD016 /* Build configuration list for PBXNativeTarget "DoubleTargetXC4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5010E13D134527D6007AD016 /* Debug */,
+				5010E13E134527D6007AD016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5010E14D134527E6007AD016 /* Build configuration list for PBXNativeTarget "DoubleTargetXC4QA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5010E14E134527E6007AD016 /* Debug */,
+				5010E14F134527E6007AD016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5010E0F4134527D5007AD016 /* Project object */;
+}
