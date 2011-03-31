@@ -64,4 +64,9 @@ end
 
 IOSBuilder::Tasks.new
 
+BetaBuilder::Tasks.new(:testing) do |config|
+  config.target = "DoubleTargetQA"
+  config.configuration = "Debug"
+  config.auto_archive = false
+end
 
