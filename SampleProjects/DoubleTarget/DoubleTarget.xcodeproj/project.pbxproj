@@ -48,8 +48,8 @@
 		28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate_Shared.m; path = Shared/AppDelegate_Shared.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* DoubleTarget_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleTarget_Prefix.pch; sourceTree = "<group>"; };
-		503204561345095800DAE776 /* DoubleTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		503204581345095800DAE776 /* DoubleTarget-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubleTarget-Info copy.plist"; sourceTree = "<group>"; };
+		503204561345095800DAE776 /* DoubleTargetQA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleTargetQA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		503204581345095800DAE776 /* DoubleTargetQA-Info.plist */ = {isa = PBXFileReference; path = "DoubleTargetQA-Info.plist"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* DoubleTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DoubleTarget-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* DoubleTarget.app */,
-				503204561345095800DAE776 /* DoubleTarget.app */,
+				503204561345095800DAE776 /* DoubleTargetQA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 				28EEC0491118E28000187D67 /* AppDelegate_Shared.h */,
 				28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */,
 				8D1107310486CEB800E47090 /* DoubleTarget-Info.plist */,
-				503204581345095800DAE776 /* DoubleTarget-Info copy.plist */,
+				503204581345095800DAE776 /* DoubleTargetQA-Info.plist */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 			);
 			name = DoubleTargetQA;
 			productName = DoubleTarget;
-			productReference = 503204561345095800DAE776 /* DoubleTarget.app */;
+			productReference = 503204561345095800DAE776 /* DoubleTargetQA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -300,8 +300,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DoubleTarget_Prefix.pch;
-				INFOPLIST_FILE = "DoubleTarget-Info copy.plist";
-				PRODUCT_NAME = DoubleTarget;
+				INFOPLIST_FILE = "DoubleTargetQA-Info.plist";
+				PRODUCT_NAME = DoubleTargetQA;
 			};
 			name = Debug;
 		};
@@ -312,8 +312,8 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DoubleTarget_Prefix.pch;
-				INFOPLIST_FILE = "DoubleTarget-Info copy.plist";
-				PRODUCT_NAME = DoubleTarget;
+				INFOPLIST_FILE = "DoubleTargetQA-Info.plist";
+				PRODUCT_NAME = DoubleTargetQA;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
