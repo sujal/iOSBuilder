@@ -6,7 +6,12 @@ require 'betabuilder'
 
 module IOSBuilder
   class Tasks < ::Rake::TaskLib
-    def initialize(targets = :all, default_configuration = "Ad Hoc")
+    def initialize(targets = :all, default_configuration = "Ad Hoc", params = {})
+      
+      @targets = targets
+      @default_configuration = default_configuration
+      @params = params
+      
       define
     end
     
@@ -16,7 +21,7 @@ module IOSBuilder
         config.configuration = xconfig
         config.auto_archive = true
         config.archive_path = File.expand_path("~/Library/Application Support/Developer/Shared/Archived Applications/")
-        if xconfig == "Ad Hoc" or xconfig == "Beta"
+        if (xconfig == "Ad Hoc" or xconfig == "Beta") and ( !tfapi.nil? and !tfteam.nil? )
           # configure deployment via TestFlight
           config.deploy_using(:testflight) do |tf|
             tf.api_token  = tfapi
@@ -28,7 +33,7 @@ module IOSBuilder
     
     def define
 
-      targets = `xcodebuild -list | sed '
+      xtargets = `xcodebuild -list | sed '
       		/Targets:/,/^[[:space:]]*$/			!d
       		/Targets/					d
       		/^[[:space:]]*$/				d
@@ -36,6 +41,14 @@ module IOSBuilder
       		s/(.*)//
       		s/[[:space:]]*$//
       	'`.strip.split(/\n/)
+    
+      if @targets != :all
+        
+        xtargets = xtargets.select do |v|
+          @targets.include?(v)
+        end
+        
+      end
     
       raw_configs = `xcodebuild -list | sed '
         		/Build Configurations:/,/^[[:space:]]*$/	!d
@@ -45,10 +58,10 @@ module IOSBuilder
         		s/[[:space:]][(]Active[)]$//
         	'| perl -e '$a="";while(<>){$a.=$_;} $a=~s/\n/:/mg; print $a;'`.strip.split(/:\s*/)
     
-      p targets
+      p xtargets
       p raw_configs
 
-      targets.each do |target|
+      xtargets.each do |target|
         raw_configs.each do |xconfig|
           
           target_namespace = target.to_sym
@@ -59,11 +72,11 @@ module IOSBuilder
             xconfig.downcase.to_sym
           end
 
-          if targets.length == 1
-            self.create_betabuilder(namespace, target, xconfig)
+          if xtargets.length == 1
+            self.create_betabuilder(namespace, target, xconfig, @params[:tf_api_token], @params[:tf_team_token])
           else
             namespace(target_namespace) do
-              self.create_betabuilder(namespace, target, xconfig)
+              self.create_betabuilder(namespace, target, xconfig, @params[:tf_api_token], @params[:tf_team_token])
             end
           end
 
