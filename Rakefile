@@ -10,6 +10,22 @@ module IOSBuilder
       define
     end
     
+    def create_betabuilder(namespace, target, xconfig, tfapi=nil, tfteam=nil)
+      BetaBuilder::Tasks.new(namespace) do |config|
+        config.target = target
+        config.configuration = xconfig
+        config.auto_archive = true
+        config.archive_path = File.expand_path("~/Library/Application Support/Developer/Shared/Archived Applications/")
+        if xconfig == "Ad Hoc" or xconfig == "Beta"
+          # configure deployment via TestFlight
+          config.deploy_using(:testflight) do |tf|
+            tf.api_token  = tfapi
+            tf.team_token = tfteam
+          end
+        end
+      end
+    end
+    
     def define
 
       targets = `xcodebuild -list | sed '
@@ -35,25 +51,22 @@ module IOSBuilder
       targets.each do |target|
         raw_configs.each do |xconfig|
           
+          target_namespace = target.to_sym
+          
           namespace = case xconfig
           when "Ad Hoc" then :beta
           else
             xconfig.downcase.to_sym
           end
 
-          BetaBuilder::Tasks.new(namespace) do |config|
-            config.target = target
-            config.configuration = xconfig
-            config.auto_archive = true
-            config.archive_path = File.expand_path("~/Library/Application Support/Developer/Shared/Archived Applications/")
-            if xconfig == "Ad Hoc" or xconfig == "Beta"
-              # configure deployment via TestFlight
-              config.deploy_using(:testflight) do |tf|
-                tf.api_token  = ""
-                tf.team_token = ""
-              end
+          if targets.length == 1
+            self.create_betabuilder(namespace, target, xconfig)
+          else
+            namespace(target_namespace) do
+              self.create_betabuilder(namespace, target, xconfig)
             end
           end
+
         end
       end
 
